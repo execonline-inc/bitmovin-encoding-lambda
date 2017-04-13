@@ -133,7 +133,7 @@
 	  this.triggerEncoding = function (createInputPromise, jobConfiguration, bitcodin) {
 	    var Q = __webpack_require__(8);
 	    Q.all([createInputPromise]).then(function (result) {
-	      console.log('Successfully created input and encoding profile');
+	      console.log('Successfully created input');
 	      jobConfiguration.inputId = result[0].inputId;
 
 	      bitcodin.job.create(jobConfiguration).then(function (newlyCreatedJob) {

@@ -1,0 +1,15 @@
+{
+    "Records": [
+        {
+            "EventSource": "aws:sns",
+            "EventVersion": "1.0",
+            "Sns": {
+                "Type": "Notification",
+                "Subject": "Amazon S3 Notification",
+                "Message": "{\"Records\":[{\"s3\":{\"bucket\":{\"name\":\"execonline-staging-rawvideo\"},\"object\":{\"key\":\"video/5fa165e8ca8c775948cf_25909552.mp4\"}}}]}",
+                "Timestamp": "2017-03-20T20:12:00.079Z",
+                "SignatureVersion": "1"
+            }
+        }
+    ]
+}
