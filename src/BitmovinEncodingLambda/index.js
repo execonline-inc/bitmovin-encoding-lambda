@@ -1,5 +1,4 @@
-class 
-BitmovinEncodingLambda {
+class BitmovinEncodingLambda {
   getVideoLink = (message, context, callback) => {
     console.log('message: ' + message);
     message = JSON.parse(message);
@@ -31,7 +30,7 @@ BitmovinEncodingLambda {
     const Q = require("Q");
     Q.all([createInputPromise]).then(
       (result) => {
-        console.log('Successfully created input and encoding profile');
+        console.log('Successfully created input');
         jobConfiguration.inputId = result[0].inputId;
 
         bitcodin.job.create(jobConfiguration)
