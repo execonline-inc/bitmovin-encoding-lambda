@@ -1,3 +1,4 @@
+***** This repository is deprecated *****
 # bitmovin-encoding-lambda
  The bitmovin-encoding-lambda is a lambda function that allows for asynchronous encoding of raw video files.  This function is triggered by SNS when a new video is uploaded to S3 from our platform.  The lambda parses the link to the video from the SNS message, and creates an bitmovin input for that video.  We provide an encoding profile and output location.  The encoding profile dictates how many livestreams will be created and what their resolution will be.  The output location in our example is another Amazon S3 bucket.  This function produces a folder with livestream encodings and DASH/HLS manifest files, as well as thumbnails.
 
